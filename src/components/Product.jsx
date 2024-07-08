@@ -85,10 +85,12 @@ const Product = () => {
 
   return (
     <div>
-      <div className=" flex justify-center  mt-20 text-center">
-        <div className="bg-main p-8 pl-14 pr-14 rounded-md">
-          <p>Get 10% off your first order</p>
-          <button className="bg-white mt-4 p-2 rounded-md">Shop Now</button>
+      <div className=" lg:flex justify-center mt-20 lg:text-center">
+        <div className="bg-main lg:p-8 lg:pl-14 lg:pr-14 p-4 rounded-md flex lg:flex-col flex-row">
+          <p className="lg:mt-0  mt-2">Get 10% off your first order</p>
+          <button className="bg-white lg:mt-4  p-2 lg:ml-0  ml-6 rounded-md">
+            Shop Now
+          </button>
         </div>
       </div>
 

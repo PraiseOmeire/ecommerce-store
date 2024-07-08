@@ -7,7 +7,7 @@ const Modal = ({show, item, onClose}) => {
 
   return (
     <div className="fixed top-0 right-0 flex justify-center items-start p-6 z-50">
-      <div className="bg-main p-10 px-16 rounded shadow-lg">
+      <div className="bg-main p-10 lg:px-16 rounded shadow-lg">
         <h4 className="text-md mb-4 font-bold">✔ Item Added To Your Cart</h4>
         <div className="flex">
           <img
@@ -21,7 +21,7 @@ const Modal = ({show, item, onClose}) => {
         <div className="flex justify-center mt-4">
           <button
             onClick={() => (window.location.href = "/cart")}
-            className="px-24 py-2 bg-white text-black rounded"
+            className="lg:px-24 px-12 py-2 bg-white text-black rounded"
           >
             View Cart
           </button>
