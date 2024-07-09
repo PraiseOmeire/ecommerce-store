@@ -20,13 +20,13 @@ code {
 
 .background-div {
   background-image: url("../src/assets/offers.png");
-  background-size: cover; /* Make the background cover the entire div */
-  background-position: center; /* Center the background image */
-  background-repeat: no-repeat; /* Prevent the background from repeating */
-  background-attachment: fixed; /* Make the background image fixed */
-  height: 300px; /* Set a height for the div */
-  width: 100%; /* Set a width for the div */
-  overflow: auto; /* Enable scrolling */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 300px;
+  width: 100%;
+  overflow: auto;
 }
 
 .inika {

@@ -85,7 +85,6 @@ const Product = () => {
   return (
     <div>
       <div className="background-div">
-        {/* <img src="/images/offers.png" /> */}
         <div className=" lg:flex justify-center lg:text-center">
           <div className="bg-main lg:p-12 lg:pl-20 lg:pr-20 p-4 rounded-md flex lg:flex-col flex-row mt-16">
             <p className="lg:mt-0 lg:text-2xl text-xl mt-2">

@@ -33,12 +33,12 @@ const Navbar = () => {
 
           <div className="flex lg:mt-16 ">
             <img
-              src="./images/AiOutlineSearch.png"
+              src="/images/AiOutlineSearch.png"
               alt="search"
               className="mr-8 w-[30px] h-[30px]"
             />
             <img
-              src="./images/Cart.png"
+              src="/images/Cart.png"
               alt="Cart"
               className="mr-8 w-[30px] h-[30px]"
             />

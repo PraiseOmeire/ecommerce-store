@@ -58,7 +58,7 @@ const CartPage = ({show, item}) => {
           </div>
         </div>
 
-        <div className="lg:mr-38 -ml-20 lg:ml-10 md:ml-10">
+        <div className="lg:mr-38 -ml-16 lg:ml-10 md:ml-10">
           <div className="lg:mr-56">
             <h4 className="lg:text-5xl text-2xl font-bold inika-bold">
               Plain Belgian
@@ -106,7 +106,11 @@ const CartPage = ({show, item}) => {
             >
               +
             </button>
-            <img src="/images/trash.png" alt="delete" />
+            <img
+              src="/images/trash.png"
+              alt="delete"
+              className="lg:w-[34px] lg:h-[36px] w-[16px] h-[18px] lg:mt-1 mt-2"
+            />
           </div>
 
           <div>
