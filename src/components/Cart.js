@@ -1,27 +1,32 @@
 import React from "react";
 import {Link} from "react-router-dom";
 
-const CartPage = () => {
+const CartPage = ({show, item}) => {
   return (
     <div className="mt-20 lg:ml-10 md:ml-10 ml-2 mr-10 inika mb-20">
-      <h4>Shop All </h4>
+      <h4 className="lg:ml-10 lg:text-2xl text-xl">
+        <Link to="/" className="font-bold">
+          Shop All
+        </Link>{" "}
+        &#62; Plain Belgian &#62; <Link to="/cart">Cart</Link>
+      </h4>
       <div className="flex justify-between mt-16">
         <div className="lg:ml-20">
           <img
             src="/images/img-2.jpg"
-            alt="Plain"
-            className="w-[150px] h-[200px] lg:w-[400px] lg:h-[500px] md:w-[300px] md:h-[400px] lg:mb-16 mb-2 lg:mt-16 mt-2"
+            alt="Plain Belgian"
+            className="w-[150px] h-[200px] lg:w-[500px] lg:h-[500px] md:w-[300px] md:h-[400px] lg:mb-16 mb-2 lg:mt-1 mt-2"
           />
           <div className="flex ">
             <img
-              src="/images/img-11.jpg"
+              src="/images/img-12.jpg"
               alt="img"
-              className="lg:mr-12 mr-4 lg:w-[150px] lg:h-[150px] md:w-[70px] md:h-[80px] w-[60px] h-[60px]"
+              className="lg:mr-12 mr-4 lg:w-[200px] lg:h-[200px] md:w-[70px] md:h-[80px] w-[60px] h-[60px]"
             />
             <img
               src="/images/img-10.jpg"
               alt="img"
-              className="lg:w-[150px] lg:h-[150px] md:w-[70px] md:h-[80px] w-[60px] h-[60px]"
+              className="lg:w-[200px] lg:h-[200px] md:w-[70px] md:h-[80px] w-[60px] h-[60px]"
             />
           </div>
 
@@ -34,7 +39,7 @@ const CartPage = () => {
           </div>
         </div>
 
-        <div className="lg:mr-38 -ml-28 lg:ml-10 md:ml-10">
+        <div className="lg:mr-38 -ml-24 lg:ml-10 md:ml-10">
           <div className="lg:mr-56">
             <h4 className="lg:text-5xl text-2xl font-bold inika-bold">
               Plain Belgian
@@ -43,22 +48,27 @@ const CartPage = () => {
               <img
                 src="/images/star.png"
                 className="w-[20px] h-[20px] lg:w-[50px] lg:h-[50px]"
+                alt="star"
               />
               <img
                 src="/images/star.png"
                 className="w-[20px] h-[20px] lg:w-[50px] lg:h-[50px]"
+                alt="star"
               />
               <img
                 src="/images/star.png"
                 className="w-[20px] h-[20px] lg:w-[50px] lg:h-[50px]"
+                alt="star"
               />
               <img
                 src="/images/star.png"
                 className="w-[20px] h-[20px] lg:w-[50px] lg:h-[50px]"
+                alt="star"
               />
               <img
                 src="/images/star.png"
                 className="w-[20px] h-[20px] lg:w-[50px] lg:h-[50px]"
+                alt="star"
               />
             </div>
           </div>
@@ -75,7 +85,7 @@ const CartPage = () => {
           </div>
 
           <div>
-            <p className="text-2xl mt-6">2000</p>
+            <p className="text-2xl mt-6">₦ 2000</p>
 
             <p className="lg:text-1xl text-xs">
               <Link className="font-semibold underline lg:text-1xl text-xs">
@@ -94,15 +104,15 @@ const CartPage = () => {
           </div>
 
           <div className="lg:flex mt-6">
-            <div className="flex flex-row lg:flex-col">
-              <button className="text-black lg:p-4 lg:pl-6 lg:pr-6 pl-2 pr-2 rounded-3xl bg-main lg:mr-4">
+            <div className="flex flex-row ">
+              <button className="text-black lg:p-4 lg:pl-6 lg:pr-6 pl-2 pr-2 rounded-3xl bg-main lg:mr-4 mr-1">
                 Box of 4
               </button>
               <button className="text-black lg:p-4 lg:pl-6 lg:pr-6 pl-2 pr-2 rounded-3xl bg-white border border-light lg:mr-4">
                 Box of 6
               </button>
             </div>
-            <div>
+            <div className="">
               <button className="text-black lg:p-4 lg:pl-6 lg:pr-6 pl-4 pr-4 rounded-3xl bg-white border border-light lg:mt-0 mt-6">
                 Box of 12
               </button>
@@ -110,12 +120,15 @@ const CartPage = () => {
           </div>
 
           <div className="flex mt-8">
-            <button className=" lg:text-xl text-xs text-black lg:p-4 lg:pl-6 lg:pr-6 pl-1 pr-1 lg:rounded-2xl bg-main border border-2 border-gray-400 lg:mr-10 mr-2">
+            <button className=" lg:text-xl text-xs text-black lg:p-4 lg:pl-6 lg:pr-6 pl-1 pr-1 p-2 rounded-md lg:rounded-2xl bg-main border border-2 border-gray-400 lg:mr-10 mr-2">
               Save for Later
             </button>
-            <button className="g:text-xl text-xs text-black lg:p-4 lg:pl-6 lg:pr-6 pl-1 pr-1 lg:rounded-2xl bg-main border border-2 border-gray-400">
-              Add to cart
-            </button>
+            <Link
+              to="/checkout"
+              className="lg:text-xl text-xs text-black lg:p-4 lg:pl-6 lg:pr-6 pl-1 pr-1 p-2 rounded-md lg:rounded-2xl bg-main border border-2 border-gray-400"
+            >
+              Checkout
+            </Link>
           </div>
 
           <div className="mt-10 hidden md:block">
@@ -174,6 +187,48 @@ const CartPage = () => {
           Belgian Waffle made with butter, milk, and eggs, and pearl sugar
           imported from Belgium.{" "}
         </p>
+      </div>
+
+      <div className="bg-[#F6F5F5] ml-6 mt-6 p-2">
+        <div className="mt-6 lg:hidden md:hidden text-center">
+          <h4 className="font-semibold text-xl inika-bold">STORAGE</h4>
+          <hr className="font-bold bg-black mt-2"></hr>
+          <p>Waffles contain no preservatives</p>
+          <p className=" leading-loose ">
+            Store for up to 1 week in an air tight container in a fridge or
+            freezer
+          </p>
+        </div>
+
+        <div className="mt-10 lg:hidden md:hidden text-center">
+          <div className="flex">
+            <h4 className="font-semibold text-xl inika-bold mr-12">
+              DELIVERY INFORMATION
+            </h4>
+            <button className="text-3xl">+</button>
+          </div>
+          <hr className="font-bold mt-2"></hr>
+        </div>
+
+        <div className="mt-10 lg:hidden md:hidden text-center">
+          <div className="flex">
+            <h4 className="font-semibold text-xl inika-bold mr-8">
+              REHEATING INSTRUCTIONS
+            </h4>
+            <button className="text-3xl">+</button>
+          </div>
+          <hr className="font-bold mt-2"></hr>
+        </div>
+
+        <div className="mt-10 lg:hidden md:hidden text-center">
+          <div className="flex">
+            <h4 className="font-semibold text-xl inika-bold mr-44">
+              ALLERGENS
+            </h4>
+            <button className="text-3xl">+</button>
+          </div>
+          <hr className="font-bold mt-2"></hr>
+        </div>
       </div>
 
       <div className="lg:ml-72 mt-10 lg:hidden md:hidden flex justify-end">

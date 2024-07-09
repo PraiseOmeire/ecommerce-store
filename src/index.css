@@ -18,6 +18,17 @@ code {
     monospace;
 }
 
+.background-div {
+  background-image: url("../src/assets/offers.png");
+  background-size: cover; /* Make the background cover the entire div */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background from repeating */
+  background-attachment: fixed; /* Make the background image fixed */
+  height: 300px; /* Set a height for the div */
+  width: 100%; /* Set a width for the div */
+  overflow: auto; /* Enable scrolling */
+}
+
 .inika {
   font-family: "Inika", serif;
   font-style: normal;
@@ -33,4 +44,18 @@ code {
   font-family: "Inika", serif;
   font-weight: 700;
   font-style: normal;
+}
+
+.loader {
+  border-top-color: #ffe1db;
+  animation: spinner 1.5s linear infinite;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

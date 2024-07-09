@@ -6,8 +6,14 @@ const Modal = ({show, item, onClose}) => {
   }
 
   return (
-    <div className="fixed top-0 right-0 flex justify-center items-start p-6 z-50">
+    <div className="fixed top-0 right-0 flex justify-center items-start p-6 z-50 ">
       <div className="bg-main p-10 lg:px-16 rounded shadow-lg">
+        <button
+          onClick={onClose}
+          className="absolute top-2 right-2 text-black bg-white rounded-full p-2 focus:outline-none"
+        >
+          &times;
+        </button>
         <h4 className="text-md mb-4 font-bold">✔ Item Added To Your Cart</h4>
         <div className="flex">
           <img

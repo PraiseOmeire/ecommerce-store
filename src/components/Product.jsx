@@ -2,7 +2,6 @@ import React, {useState} from "react";
 import "../index.css";
 import Modal from "./Modal";
 import AddToCartButton from "./AddToCartButton";
-import CartPage from "./Cart";
 
 const Product = () => {
   const [showModal, setShowModal] = useState(false);
@@ -10,7 +9,7 @@ const Product = () => {
 
   const data = [
     {
-      image: "images/img-2.jpg",
+      image: "images/img-1.jpg",
       imageDetails: "Rafaello",
       text: "From ₦10,000",
       buttonText: "Add to cart",
@@ -28,7 +27,7 @@ const Product = () => {
       buttonText: "Add to cart",
     },
     {
-      image: "images/img-5.jpg",
+      image: "images/img-4.jpg",
       imageDetails: "Shrimp & Basil",
       text: "From ₦10,000",
       buttonText: "Add to cart",
@@ -85,12 +84,17 @@ const Product = () => {
 
   return (
     <div>
-      <div className=" lg:flex justify-center mt-20 lg:text-center">
-        <div className="bg-main lg:p-8 lg:pl-14 lg:pr-14 p-4 rounded-md flex lg:flex-col flex-row">
-          <p className="lg:mt-0  mt-2">Get 10% off your first order</p>
-          <button className="bg-white lg:mt-4  p-2 lg:ml-0  ml-6 rounded-md">
-            Shop Now
-          </button>
+      <div className="background-div">
+        {/* <img src="/images/offers.png" /> */}
+        <div className=" lg:flex justify-center lg:text-center">
+          <div className="bg-main lg:p-12 lg:pl-20 lg:pr-20 p-4 rounded-md flex lg:flex-col flex-row mt-16">
+            <p className="lg:mt-0 lg:text-2xl text-xl mt-2">
+              Get 10% off your first order
+            </p>
+            <button className="bg-white lg:mt-4 p-2 lg:ml-0 ml-2 rounded-md">
+              Shop Now
+            </button>
+          </div>
         </div>
       </div>
 
@@ -149,9 +153,9 @@ const Product = () => {
                 <img
                   src={item.image}
                   alt={item.imageDetails}
-                  className="lg:w-[320px] h-auto mb-2"
+                  className="lg:w-[320px] h-auto mb-2  transform transition-transform duration-300 hover:scale-110 hover:opacity-175"
                 />
-                <p className="lg:text-2xl text-1xl mb-2 mt-4 lg:font-normal font-semibold tracking-wider">
+                <p className="lg:text-2xl text-1xl mb-2 mt-4 font-semibold tracking-wider">
                   {item.imageDetails}
                 </p>
                 <p className="lg:font-semibold mb-1">{item.text}</p>
@@ -168,9 +172,9 @@ const Product = () => {
                 <img
                   src={item.image}
                   alt={item.imageDetails}
-                  className="lg:w-[320px] h-auto mb-2"
+                  className="lg:w-[320px] h-auto mb-2 transform transition-transform duration-300 hover:scale-110 hover:opacity-175"
                 />
-                <p className="lg:text-2xl text-1xl mb-2 mt-4 lg:font-normal font-semibold tracking-wider">
+                <p className="lg:text-2xl text-1xl mb-2 mt-4 font-semibold tracking-wider">
                   {item.imageDetails}
                 </p>
                 <p className="lg:font-semibold mb-1">{item.text1}</p>
@@ -188,9 +192,9 @@ const Product = () => {
                 <img
                   src={item.image}
                   alt={item.imageDetails}
-                  className="lg:w-[320px] h-auto mb-2"
+                  className="lg:w-[320px] h-auto mb-2 transform transition-transform duration-300 hover:scale-110 hover:opacity-175"
                 />
-                <p className="lg:text-2xl text-1xl mb-2 mt-4 lg:font-normal font-semibold tracking-wider">
+                <p className="lg:text-2xl text-1xl mb-2 mt-4 font-semibold tracking-wider">
                   {item.imageDetails}
                 </p>
                 <p className="lg:font-semibold mb-1">{item.text}</p>
