@@ -28,8 +28,8 @@ code {
   width: 100%;
   overflow: auto;
 
-  @media (max-width: 480px) {
-    background-size: inherit;
+  @media (max-width: 520px) {
+    background-size: cover;
     height: 250px;
   }
 }
