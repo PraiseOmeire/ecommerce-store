@@ -87,11 +87,11 @@ const Product = () => {
       <div className="relative w-full h-auto">
         <img src="/images/offers.png" className="w-full " />
         <div className=" absolute inset-0 lg:flex justify-center lg:text-center">
-          <div className=" lg:p-12 lg:pl-20 lg:pr-20 p-3 rounded-md flex lg:flex-col flex-row mt-16 bg-main bg-opacity-80 lg:mb-4">
-            <p className="lg:mt-0 lg:text-2xl text-xl mt-2">
+          <div className=" lg:p-12 lg:pl-20 lg:pr-20 p-3 rounded-md flex lg:flex-col flex-row mt-16 bg-main bg-opacity-80 lg:mb-12">
+            <p className="lg:mt-0 lg:text-2xl text-xl mt-2 font-semibold">
               Get 10% off your first order
             </p>
-            <button className="bg-white lg:mt-4 p-2 lg:ml-0 ml-2 rounded-md">
+            <button className="bg-white lg:mt-4 p-2 lg:ml-0 ml-2 rounded-md font-semibold">
               Shop Now
             </button>
           </div>
