@@ -106,11 +106,13 @@ const CartPage = ({show, item}) => {
             >
               +
             </button>
-            <img
-              src="/images/trash.png"
-              alt="delete"
-              className="lg:w-[34px] lg:h-[36px] w-[16px] h-[18px] lg:mt-1 mt-2"
-            />
+            <Link to="/">
+              <img
+                src="/images/trash.png"
+                alt="delete"
+                className="lg:w-[34px] lg:h-[36px] w-[16px] h-[18px] lg:mt-1 mt-2"
+              />
+            </Link>
           </div>
 
           <div>
