@@ -1,14 +1,33 @@
-import React from "react";
+import React, {useState} from "react";
 import {Link} from "react-router-dom";
 
 const CartPage = ({show, item}) => {
+  const [count, setCount] = useState(2);
+
+  const handleIncrement = () => {
+    const newCount = count + 1;
+    setCount(newCount);
+  };
+
+  const handleDecrement = () => {
+    const newCount = count > 1 ? count - 1 : 1;
+    setCount(newCount);
+  };
+
+  const getPrice = () => {
+    return count * 10000;
+  };
+
   return (
     <div className="mt-20 lg:ml-10 md:ml-10 ml-2 mr-10 inika mb-20">
       <h4 className="lg:ml-10 lg:text-2xl text-xl">
-        <Link to="/" className="font-bold">
-          Shop All
+        <Link to="/" className="font-bold lg:mr-2">
+          Shop All &#62;
         </Link>{" "}
-        &#62; Plain Belgian &#62; <Link to="/cart">Cart</Link>
+        <span className="lg:mr-2">Plain Belgian &#62;</span>{" "}
+        <Link to="/cart" className="lg:mr-2">
+          Cart &#62;
+        </Link>{" "}
       </h4>
       <div className="flex justify-between mt-16">
         <div className="lg:ml-20">
@@ -21,12 +40,12 @@ const CartPage = ({show, item}) => {
             <img
               src="/images/img-12.jpg"
               alt="img"
-              className="lg:mr-12 mr-4 lg:w-[200px] lg:h-[200px] md:w-[70px] md:h-[80px] w-[60px] h-[60px]"
+              className="lg:mr-12 mr-4 lg:w-[180px] lg:h-[200px] md:w-[70px] md:h-[80px] w-[60px] h-[60px]"
             />
             <img
               src="/images/img-10.jpg"
               alt="img"
-              className="lg:w-[200px] lg:h-[200px] md:w-[70px] md:h-[80px] w-[60px] h-[60px]"
+              className="lg:w-[180px] lg:h-[200px] md:w-[70px] md:h-[80px] w-[60px] h-[60px]"
             />
           </div>
 
@@ -39,7 +58,7 @@ const CartPage = ({show, item}) => {
           </div>
         </div>
 
-        <div className="lg:mr-38 -ml-24 lg:ml-10 md:ml-10">
+        <div className="lg:mr-38 -ml-20 lg:ml-10 md:ml-10">
           <div className="lg:mr-56">
             <h4 className="lg:text-5xl text-2xl font-bold inika-bold">
               Plain Belgian
@@ -74,18 +93,24 @@ const CartPage = ({show, item}) => {
           </div>
 
           <div className="flex mt-6">
-            <button className="border border-2 border-solid lg:pl-2 lg:pr-2 pl-1 pr-1 border-black lg:mr-6 mr-2">
+            <button
+              className="border border-2 border-solid lg:pl-2 lg:pr-2 pl-1 pr-1 border-black lg:mr-6 mr-2"
+              onClick={handleDecrement}
+            >
               -
             </button>
-            <p className="text-2xl lg:mr-6 mr-2">2</p>
-            <button className="border border-2 border-solid lg:pl-2 lg:pr-2 pl-1 pr-1 border-black text-2xl lg:mr-6 mr-2">
+            <p className="text-2xl lg:mr-6 mr-2">{count}</p>
+            <button
+              className="border border-2 border-solid lg:pl-2 lg:pr-2 pl-1 pr-1 border-black text-2xl lg:mr-6 mr-2"
+              onClick={handleIncrement}
+            >
               +
             </button>
             <img src="/images/trash.png" alt="delete" />
           </div>
 
           <div>
-            <p className="text-2xl mt-6">₦ 2000</p>
+            <p className="text-2xl mt-6">₦ {getPrice()}</p>
 
             <p className="lg:text-1xl text-xs">
               <Link className="font-semibold underline lg:text-1xl text-xs">
@@ -201,8 +226,8 @@ const CartPage = ({show, item}) => {
           </p>
         </div>
 
-        <div className="mt-10 lg:hidden md:hidden text-center">
-          <div className="flex">
+        <div className="mt-10 lg:hidden md:hidden ">
+          <div className="flex justify-end">
             <h4 className="font-semibold text-xl inika-bold mr-12">
               DELIVERY INFORMATION
             </h4>
@@ -211,8 +236,8 @@ const CartPage = ({show, item}) => {
           <hr className="font-bold mt-2"></hr>
         </div>
 
-        <div className="mt-10 lg:hidden md:hidden text-center">
-          <div className="flex">
+        <div className="mt-10 lg:hidden md:hidden ">
+          <div className="flex justify-between">
             <h4 className="font-semibold text-xl inika-bold mr-8">
               REHEATING INSTRUCTIONS
             </h4>
@@ -222,8 +247,8 @@ const CartPage = ({show, item}) => {
         </div>
 
         <div className="mt-10 lg:hidden md:hidden text-center">
-          <div className="flex">
-            <h4 className="font-semibold text-xl inika-bold mr-32">
+          <div className="flex justify-between">
+            <h4 className="font-semibold text-center text-xl inika-bold ">
               ALLERGENS
             </h4>
             <button className="text-3xl">+</button>

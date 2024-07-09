@@ -134,7 +134,7 @@ const Product = () => {
             <li className="mb-2 lg:text-xl md:text-sm text-sm ">
               <a href="#">₦ 2500 - 4000</a>
             </li>
-            <li className="mb- lg:text-xl md:text-sm text-sm">
+            <li className="mb-2 lg:text-xl md:text-sm text-sm">
               <a href="#">₦ 4000 - 6000</a>
             </li>
             <li className="mb-2 lg:text-xl md:text-sm text-sm">

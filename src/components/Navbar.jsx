@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import {Link} from "react-router-dom";
+import {AiOutlineUser} from "react-icons/ai";
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState("");
@@ -37,13 +38,14 @@ const Navbar = () => {
               className="mr-8 w-[30px] h-[30px]"
             />
             <img
-              src="./images/AiOutlineShoppingCart.png"
+              src="./images/Cart.png"
               alt="Cart"
               className="mr-8 w-[30px] h-[30px]"
             />
+
             <img
-              src="./images/AiOutlineuser.png"
-              alt="User"
+              src="/images/AiOutlineUser.png"
+              alt="Cart"
               className=" w-[30px] h-[30px]"
             />
           </div>

@@ -16,10 +16,14 @@ const Checkout = () => {
   return (
     <div className="inika">
       <h4 className="lg:ml-20 ml-6 lg:mt-20 mt-10 lg:text-2xl text-xl">
-        <Link to="/" className="font-bold">
-          Shop All
+        <Link to="/" className="font-bold lg:mr-2">
+          Shop All &#62;
         </Link>{" "}
-        &#62; Plain Belgian &#62; <Link to="/cart">Cart</Link>&#62; Checkout
+        <span className="lg:mr-2">Plain Belgian &#62;</span>{" "}
+        <Link to="/cart" className="lg:mr-2">
+          Cart &#62;
+        </Link>{" "}
+        Checkout
       </h4>
 
       <div className="lg:flex justify-between mt-10">
