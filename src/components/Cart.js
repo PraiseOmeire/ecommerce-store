@@ -134,10 +134,10 @@ const CartPage = ({show, item}) => {
 
           <div className="lg:flex mt-6">
             <div className="flex flex-row ">
-              <button className="text-black lg:p-4 lg:pl-6 lg:pr-6 pl-2 pr-2 rounded-3xl bg-main lg:mr-4 mr-1">
+              <button className="text-black lg:p-4 lg:pl-6 lg:pr-6 pl-1 pr-1 rounded-3xl bg-main lg:mr-4 mr-1">
                 Box of 4
               </button>
-              <button className="text-black lg:p-4 lg:pl-6 lg:pr-6 pl-2 pr-2 rounded-3xl bg-white border border-light lg:mr-4">
+              <button className="text-black lg:p-4 lg:pl-6 lg:pr-6 pl-1 pr-1 rounded-3xl bg-white border border-light lg:mr-4">
                 Box of 6
               </button>
             </div>

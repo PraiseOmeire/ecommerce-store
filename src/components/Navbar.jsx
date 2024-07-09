@@ -38,14 +38,14 @@ const Navbar = () => {
               className="mr-8 w-[30px] h-[30px]"
             />
             <img
-              src="/images/Cart.png"
+              src="/images/cart.png"
               alt="Cart"
               className="mr-8 w-[30px] h-[30px]"
             />
 
             <img
               src="/images/AiOutlineUser.png"
-              alt="Cart"
+              alt="Use"
               className=" w-[30px] h-[30px]"
             />
           </div>

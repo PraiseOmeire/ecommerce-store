@@ -213,9 +213,20 @@ const Checkout = () => {
                 <div className="mt-6 ">
                   <h4 className="ml-8 mr-8 mb-8">Payment Method</h4>
                   <div className="flex m-8">
-                    <p className="mr-16">⏺ Card</p>
-
-                    <p> ⏺Bank Transfer</p>
+                    <div className="flex">
+                      <img
+                        src="/images/dot1.png"
+                        className="lg:mr-2 w-[23px] h-[23px]"
+                      />
+                      <p className="mr-16">Card</p>
+                    </div>
+                    <div className="flex">
+                      <img
+                        src="/images/dot-2.png"
+                        className="lg:mr-2 w-[23px] h-[23px] bg-black rounded-full"
+                      />
+                      <p> Bank Transfer</p>
+                    </div>
                   </div>
 
                   <div className="mb-4 ml-8 mr-8">
