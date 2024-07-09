@@ -19,19 +19,8 @@ code {
 }
 
 .background-div {
-  background-image: url("../src/assets/offers.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 400px;
-  width: 100%;
   overflow: auto;
-
-  @media (max-width: 520px) {
-    background-size: cover;
-    height: 250px;
-  }
 }
 
 .inika {

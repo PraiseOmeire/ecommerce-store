@@ -83,10 +83,11 @@ const Product = () => {
   };
 
   return (
-    <div>
-      <div className="background-div">
-        <div className=" lg:flex justify-center lg:text-center">
-          <div className="bg-main lg:p-12 lg:pl-20 lg:pr-20 p-4 rounded-md flex lg:flex-col flex-row mt-16">
+    <div className="inika ">
+      <div className="relative w-full h-auto">
+        <img src="/images/offers.png" className="w-full " />
+        <div className=" absolute inset-0 lg:flex justify-center lg:text-center">
+          <div className=" lg:p-12 lg:pl-20 lg:pr-20 p-3 rounded-md flex lg:flex-col flex-row mt-16 bg-main bg-opacity-80 lg:mb-4">
             <p className="lg:mt-0 lg:text-2xl text-xl mt-2">
               Get 10% off your first order
             </p>
@@ -97,7 +98,7 @@ const Product = () => {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row mt-20">
+      <div className="flex flex-col md:flex-row mt-20 background-div">
         <aside className="hidden md:block md:w-1/4 h-screen p-4 lg:ml-16 ml-8">
           <h2 className="text-xl font-bold mb-4">Browse all Categories</h2>
           <ul>
