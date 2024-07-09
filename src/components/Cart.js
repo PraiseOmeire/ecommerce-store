@@ -181,6 +181,7 @@ const CartPage = ({show, item}) => {
           </div>
         </div>
       </div>
+
       <div className="mt-6 lg:hidden md:hidden text-center">
         <h2 className="font-bold text-xl inika-bold">Description</h2>
         <p className="lg:w-[50%] md:w-[50%] w-full leading-loose mt-4">
@@ -189,7 +190,7 @@ const CartPage = ({show, item}) => {
         </p>
       </div>
 
-      <div className="bg-[#F6F5F5] ml-6 mt-6 p-2">
+      <div className="bg-[#F6F5F5] ml-6 mt-6 p-2 lg:hidden md:hidden">
         <div className="mt-6 lg:hidden md:hidden text-center">
           <h4 className="font-semibold text-xl inika-bold">STORAGE</h4>
           <hr className="font-bold bg-black mt-2"></hr>
@@ -222,7 +223,7 @@ const CartPage = ({show, item}) => {
 
         <div className="mt-10 lg:hidden md:hidden text-center">
           <div className="flex">
-            <h4 className="font-semibold text-xl inika-bold mr-44">
+            <h4 className="font-semibold text-xl inika-bold mr-32">
               ALLERGENS
             </h4>
             <button className="text-3xl">+</button>

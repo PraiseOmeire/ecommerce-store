@@ -1,18 +1,31 @@
-import React from "react";
+import React, {useState} from "react";
 import {Link} from "react-router-dom";
 
 const Navbar = () => {
+  const [activeLink, setActiveLink] = useState("");
+
   return (
     <div className="bg-[#FFE1DB] inika">
       <div className=" lg:ml-24 mr-10">
         <div className=" flex justify-between pt-12 pb-2 ">
-          <div className="flex ">
-            {" "}
+          <div className="flex">
             <img src="./images/logo1.png" alt="logo-1" className="w-[80px]" />
-            <Link to="/" className="mr-8 ml-6 mt-16 text-xl">
+            <Link
+              to="/"
+              className={`mr-8 font-bold ml-6 mt-16 text-xl hover-underline ${
+                activeLink === "home" ? "active-underline" : ""
+              }`}
+              onClick={() => setActiveLink("home")}
+            >
               Home
             </Link>
-            <Link to="/" className="mr-8 mt-16 text-xl">
+            <Link
+              to="/"
+              className={`mr-8 font-bold mt-16 text-xl hover-underline ${
+                activeLink === "shop" ? "active-underline" : ""
+              }`}
+              onClick={() => setActiveLink("shop")}
+            >
               Shop
             </Link>
           </div>
